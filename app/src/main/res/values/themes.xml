@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <bool name="lightNavEnabled">true</bool>
+
     <!-- Base application theme. -->
     <style name="Theme.BudgetBee" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
@@ -9,8 +10,13 @@
         <item name="colorOnPrimary">@color/white</item>
 
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">@color/light_blue_400</item>
+        <item name="android:statusBarColor">@color/white</item>
+
+        <!-- Ensure status bar icons/text are light to be visible on black -->
+<!--        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>-->
         <item name="android:windowLightStatusBar" tools:targetApi="m">@bool/lightNavEnabled</item>
+
+        <!-- Navigation bar color. -->
         <item name="android:navigationBarColor" tools:targetApi="o">?colorSurface</item>
         <item name="android:windowLightNavigationBar" tools:ignore="NewApi">@bool/lightNavEnabled</item>
     </style>

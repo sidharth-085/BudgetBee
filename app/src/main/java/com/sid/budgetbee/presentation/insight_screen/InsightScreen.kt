@@ -98,7 +98,7 @@ fun InsightScreen(insightViewModel: InsightViewModel = hiltViewModel()) {
             top = MaterialTheme.spacing.small
         )
     ) {
-        Column(
+         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier
                 .fillMaxSize()

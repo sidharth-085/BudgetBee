@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.sid.budgetbee"
-    >
+    package="com.sid.budgetbee">
 
     <application
         android:allowBackup="true"
@@ -15,28 +14,38 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BudgetBee"
         tools:targetApi="31">
+
+        <activity
+            android:name="com.sid.budgetbee.presentation.splash_screen.SplashScreenActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
         <activity
             android:name="com.sid.budgetbee.presentation.main.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.BudgetBee">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
         <provider
             android:name="androidx.startup.InitializationProvider"
             android:authorities="${applicationId}.androidx-startup"
             tools:node="remove">
         </provider>
+
         <meta-data android:name="io.sentry.dsn" android:value="https://eadba545e92946808f42508934c10e91@o1231793.ingest.sentry.io/6379506" />
         <meta-data android:name="io.sentry.traces.sample-rate" android:value="1.0" />
+
     </application>
 
 </manifest>

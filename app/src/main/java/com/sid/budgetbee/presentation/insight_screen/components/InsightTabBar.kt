@@ -40,8 +40,10 @@ fun InsightTabBar(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(
-                    start = MaterialTheme.spacing.medium,
-                    end = MaterialTheme.spacing.medium
+                    start = MaterialTheme.spacing.small,
+                    end = MaterialTheme.spacing.small,
+                    top = MaterialTheme.spacing.extraSmall,
+                    bottom = MaterialTheme.spacing.extraSmall
                 ),
             horizontalArrangement = Arrangement.Center,
             verticalAlignment = Alignment.CenterVertically

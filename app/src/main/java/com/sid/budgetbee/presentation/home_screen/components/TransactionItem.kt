@@ -67,10 +67,7 @@ fun TransactionItem(
             horizontalAlignment = Alignment.Start,
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(
-                    horizontal = MaterialTheme.spacing.medium,
-                    vertical = MaterialTheme.spacing.small
-                )
+                .padding(MaterialTheme.spacing.medium)
         ) {
             Row(
                 horizontalArrangement = Arrangement.spacedBy(12.dp),

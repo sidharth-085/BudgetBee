@@ -40,7 +40,6 @@ import com.sid.budgetbee.presentation.navigation.Screen
 import com.sid.budgetbee.util.spacing
 
 @ExperimentalFoundationApi
-@ExperimentalComposeUiApi
 @ExperimentalMaterialApi
 @ExperimentalUnitApi
 @Composable
@@ -90,7 +89,7 @@ fun HomeScreen(
                     contentPadding = PaddingValues(
                         start = MaterialTheme.spacing.medium,
                         top = MaterialTheme.spacing.small,
-                        end = MaterialTheme.spacing.medium
+                        end = MaterialTheme.spacing.medium,
                     )
                 ) {
                     itemsIndexed(dailyTransactions) { pos, dailyTransaction ->

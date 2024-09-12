@@ -10,6 +10,8 @@ import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -29,6 +31,7 @@ import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import com.sid.budgetbee.presentation.home_screen.Category
+import com.sid.budgetbee.util.spacing
 import kotlin.math.atan2
 import kotlin.math.min
 import kotlin.math.roundToInt
@@ -63,7 +66,9 @@ fun DonutChart(
 
     BoxWithConstraints(
         contentAlignment = Alignment.Center,
-        modifier = Modifier.fillMaxWidth()
+        modifier = Modifier
+            .padding(bottom = MaterialTheme.spacing.medium)
+            .fillMaxWidth()
     ) {
 
         val sideSize = min(constraints.maxWidth, constraints.maxHeight)

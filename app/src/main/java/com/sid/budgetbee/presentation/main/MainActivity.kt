@@ -14,7 +14,7 @@ import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.unit.ExperimentalUnitApi
 import com.google.accompanist.pager.ExperimentalPagerApi
 import com.sid.budgetbee.presentation.navigation.MainScreen
-import com.sid.budgetbee.presentation.ui.theme.ExpenseTrackerTheme
+import com.sid.budgetbee.presentation.ui.theme.BudgetBeeTheme
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.InternalCoroutinesApi
 import javax.inject.Inject
@@ -36,7 +36,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
-            ExpenseTrackerTheme {
+            BudgetBeeTheme {
                 Surface(color = MaterialTheme.colors.background) {
                     val destination by mainViewModel.startDestination.collectAsState()
                     MainScreen(

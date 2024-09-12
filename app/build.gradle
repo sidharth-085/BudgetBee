@@ -37,6 +37,7 @@ android {
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
         }
     }
     compileOptions {
@@ -72,11 +73,8 @@ dependencies {
     implementation 'com.google.android.material:material:1.5.0'
     implementation "androidx.compose.ui:ui:$compose_version"
     implementation "androidx.compose.material:material:$compose_version"
-    implementation("androidx.compose.ui:ui-tooling:$compose_version") {
-        version {
-            strictly("1.0.0-beta09")
-        }
-    }
+    implementation "androidx.compose.ui:ui-tooling-preview:$compose_version"
+    implementation("androidx.compose.ui:ui-tooling:$compose_version")
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.4.1'
     implementation 'androidx.activity:activity-compose:1.6.0-alpha01'
     testImplementation 'junit:junit:4.+'

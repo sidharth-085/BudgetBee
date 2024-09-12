@@ -38,7 +38,8 @@ fun TabButton(
         modifier = Modifier.padding(
             start = MaterialTheme.spacing.medium,
             end = MaterialTheme.spacing.medium,
-            top = MaterialTheme.spacing.small
+            top = MaterialTheme.spacing.small,
+            bottom = MaterialTheme.spacing.small
         ),
         color = Color.DarkGray.copy(alpha = 0.1f),
         shape = RoundedCornerShape(cornerRadius)
@@ -47,8 +48,10 @@ fun TabButton(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(
-                    start = MaterialTheme.spacing.medium,
-                    end = MaterialTheme.spacing.medium
+                    start = MaterialTheme.spacing.small,
+                    end = MaterialTheme.spacing.small,
+                    top = MaterialTheme.spacing.extraSmall,
+                    bottom = MaterialTheme.spacing.extraSmall
                 ),
             horizontalArrangement = Arrangement.Center,
             verticalAlignment = Alignment.CenterVertically

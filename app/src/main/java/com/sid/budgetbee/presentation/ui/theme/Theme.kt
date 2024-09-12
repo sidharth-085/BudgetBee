@@ -29,7 +29,7 @@ private val DarkColorPalette = darkColors(
 private val LightColorPalette = lightColors(
     primary = LightBlue500,
     secondary = LightBlue500,
-    background = Grey100,
+    background = White,
     surface = White,
     error = Red500,
     onSurface = Black,
@@ -39,7 +39,7 @@ private val LightColorPalette = lightColors(
 )
 
 @Composable
-fun ExpenseTrackerTheme(content: @Composable () -> Unit) {
+fun BudgetBeeTheme(content: @Composable () -> Unit) {
     val colors = LightColorPalette
 
     val windowInfo = rememberWindowInfo()
