@@ -255,7 +255,7 @@ fun Header(
                                     color = Color.LightGray.copy(alpha = 0.35f)
                                 )
                             }
-                            .padding(MaterialTheme.spacing.small)
+                            .padding(MaterialTheme.spacing.medium)
                     ) {
                         val animatedIncome by animateFloatAsState(
                             targetValue = totalIncome.toFloat(),
@@ -335,7 +335,7 @@ fun Header(
                                     color = Color.LightGray.copy(alpha = 0.35f)
                                 )
                             }
-                            .padding(MaterialTheme.spacing.small)
+                            .padding(MaterialTheme.spacing.medium)
                     ) {
                         val animatedExpense by animateFloatAsState(
                             targetValue = totalExpense.toFloat(),
