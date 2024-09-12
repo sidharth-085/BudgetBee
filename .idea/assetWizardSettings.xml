@@ -67,6 +67,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
+                                                <entry key="color" value="000000" />
                                                 <entry key="imagePath" value="/private/var/folders/79/p93zchdd6xl_45hy6q0n05p00000gn/T/ic_android_black_24dp.xml" />
                                               </map>
                                             </option>
@@ -79,8 +80,9 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="$USER_HOME$/Downloads/logo.png" />
-                                                <entry key="scalingPercent" value="61" />
+                                                <entry key="imagePath" value="$USER_HOME$/Downloads/logo1.png" />
+                                                <entry key="scalingPercent" value="99" />
+                                                <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
                                           </PersistentState>
